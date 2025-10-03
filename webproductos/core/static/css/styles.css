@@ -1,0 +1,59 @@
+/* --- Estilos de la Tarjeta --- */
+.producto-card {
+    /* Fondo ligeramente más claro que el fondo de la página, si es necesario */
+    background-color: #fff; 
+    /* Sombra de Bootstrap (shadow-sm) ya hace esto, pero es una alternativa */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.producto-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Sombra más fuerte al pasar el ratón */
+}
+
+/* --- Wrapper para la Imagen (Clave para el ajuste) --- */
+.producto-imagen-wrapper {
+    /* Altura fija para el área de la imagen */
+    height: 180px; 
+    /* Padding interior para dar espacio a la imagen (similar a la foto) */
+    padding: 15px; 
+    /* Fondo para el área de la imagen (blanco, por si la tarjeta tiene otro color) */
+    background-color: #fff; 
+}
+
+/* --- La Imagen --- */
+.producto-imagen-wrapper img {
+    /* Usamos 'object-fit: contain' para que la imagen se ajuste sin ser cortada */
+    object-fit: contain; 
+    /* Aseguramos que la imagen use el espacio del wrapper sin desbordarse */
+    width: 100%; 
+    height: 100%;
+}
+
+/* --- Información del Producto --- */
+.producto-nombre {
+    /* Margen ajustado para que se vea más compacto */
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
+    /* Tamaño y peso de fuente para que parezca el de la imagen */
+    font-size: 1.05rem; 
+    font-weight: 500;
+}
+
+.producto-precio {
+    /* Color de Bootstrap 'text-primary' es el azul, pero lo definimos por si acaso */
+    color: #0d6efd !important; 
+    /* Espacio ajustado al de la imagen */
+    margin-bottom: 0.5rem !important; 
+}
+
+/* --- Botón "Ver Detalle" --- */
+.boton-detalle {
+    /* Eliminar el radio de las esquinas del botón para que sea más rectangular como en la foto */
+    border-radius: 0; 
+    /* Asegurar que el botón sea un poco más ancho */
+    width: 90%; 
+    /* Centrar el botón si width no es 100% */
+    align-self: center; 
+}
