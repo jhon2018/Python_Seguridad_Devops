@@ -72,3 +72,7 @@ escribes: python manage.py migrate (migrar tablas a postgresql)
 ## SUPERUSUARIO
 python manage.py createsuperuser (crear user, email , pass)
 python manage.py runserver (prueba iniciando session)
+
+## PASOS
+agrega prodcutos para el ejemplo (https://console.cloudinary.com/)
+agrega la carpeta templates\base\base.html y static
