@@ -15,7 +15,7 @@ django-admin startproject webproductos
 ## EJECUTAR EN EL SERVIDOR
 python manage.py runserver
 python manage.py runserver 7000
-## CREAR APP
+## CREAR APP 
 python manage.py startapp productos
 ## MIGRAR TABLAS
 python manage.py migrate
@@ -76,3 +76,29 @@ python manage.py runserver (prueba iniciando session)
 ## PASOS
 agrega prodcutos para el ejemplo (https://console.cloudinary.com/)
 agrega la carpeta templates\base\base.html y static
+
+
+# --SESSION 3 APIS
+## CREAR APP 
+python manage.py startapp apis
+pip install djangorestframework
+eliminar migration, si levantas en models.py
+
+## MIGRAR TUS PROPIAS TABLAS
+python manage.py makemigrations apis
+python manage.py migrate (confirmar cambios admin)
+
+## PASOS
+vamos al archivo admin.py
+python manage.py runserver
+Se creo Apis como nuevo proyecto en el admin
+crea archivo serealizers.py
+vamos a archivo view.py
+vamos a archivo utls.py
+agrega linea a webproductos/urls.py (principal no core.!)
+luego python manage.py runserver
+
+entrar a http://127.0.0.1:8000/api/articulos/
+
+Prueba agregando articulos desde admin desde postman 
+y realiza delete , put.  em urls.py estan las formas
